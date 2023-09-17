@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/subLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/txtIPAddressHint" />
+
+        <EditText
+            android:id="@+id/txtIPAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:hint="@string/txtIPAddressHint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/txtServerPortHint" />
+
+        <EditText
+            android:id="@+id/txtServerPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:hint="@string/txtServerPortHint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/spnModeValues" />
+
+        <Spinner
+            android:id="@+id/spnMode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:entries="@array/spnModeValues" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/txtSpeedHint" />
+
+        <SeekBar
+            android:id="@+id/sliderSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="0.5"
+            android:max="20"
+            android:min="1"
+            android:progress="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutResolutionWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/txtResolutionWidthHint" />
+
+        <EditText
+            android:id="@+id/txtResolutionWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:hint="@string/txtResolutionWidthHint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/txtResolutionHeightHint" />
+
+        <EditText
+            android:id="@+id/txtResolutionHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:hint="@string/txtResolutionHeightHint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutResolutionHeight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/tbShowCoordinatesHint" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/tbShowCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSettingsSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/buttonSettingsSave" />
+
+        <Button
+            android:id="@+id/buttonSettingsExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:text="@string/buttonSettingsExit" />
+
+    </LinearLayout>
+
+</LinearLayout>

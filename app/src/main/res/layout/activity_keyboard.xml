@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/subLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button
+            android:id="@+id/keyboard1"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/keyboard"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:text="@string/One"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard2"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/keyboard"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/Two"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/keyboard3"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/Three"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboard4"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/Four"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboard5"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/Five"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        <Button
+            android:id="@+id/keyboard6"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/Six"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard7"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/Seven"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/keyboard8"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/Eight"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/keyboard9"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/Nine"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboard0"
+            android:textColor="@android:color/white"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/Zero"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        <ImageButton
+            android:id="@+id/keyboardBackspace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:src="@drawable/ic_action_backspace"
+            android:background="@color/keyboardShiftNormal"
+            android:contentDescription="@string/BACKSPACE" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button
+            android:id="@+id/keyboardQ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/keyboard"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:text="@string/Q"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardW"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/keyboard"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/W"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/keyboardE"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/E"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboardR"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/R"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboardT"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/T"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        <Button
+            android:id="@+id/keyboardY"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/Y"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardU"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/U"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/keyboardI"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/I"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboardO"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/O"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/keyboardP"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:text="@string/P"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+    <LinearLayout
+        android:id="@+id/subLayoutAM"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_weight="0.9"
+        >
+        <LinearLayout
+            android:id="@+id/subLayoutAL"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:clickable="false"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            >
+
+            <Button
+                android:id="@+id/keyboardA"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/A"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardS"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/S"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardD"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/D"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardF"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/F"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardG"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/G"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardH"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/H"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardJ"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/J"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardK"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/K"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/keyboardL"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/L"
+                android:background="@color/keyboard"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subLayoutZM"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:clickable="false"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <ImageButton
+                android:id="@+id/keyboardShift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:src="@drawable/ic_action_shift"
+                android:background="@color/keyboardShiftNormal"
+                android:contentDescription="@string/SHIFT" />
+
+            <Button
+                android:id="@+id/keyboardZ"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/Z"
+                android:background="@color/keyboard"/>
+            <Button
+                android:id="@+id/keyboardX"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/X"
+                android:background="@color/keyboard"/>
+            <Button
+                android:id="@+id/keyboardC"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/C"
+                android:background="@color/keyboard"/>
+            <Button
+                android:id="@+id/keyboardV"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/V"
+                android:background="@color/keyboard"/>
+            <Button
+                android:id="@+id/keyboardB"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/B"
+                android:background="@color/keyboard"/>
+            <Button
+                android:id="@+id/keyboardN"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/N"
+                android:background="@color/keyboard"/>
+            <Button
+                android:id="@+id/keyboardM"
+                android:fontFamily="arial"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="1dp"
+                android:gravity="center"
+                android:text="@string/M"
+                android:background="@color/keyboard"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayoutEnter"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_weight="0.1">
+
+        <!--<ImageButton
+            android:id="@+id/keyboardEnter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:src="@drawable/ic_action_enter"
+            android:background="@color/keyboard"
+            android:contentDescription="@string/ENTER"
+            tools:ignore="TouchTargetSizeCheck"
+            /- -->
+       <!-- <Button android:id="@+id/keyboardEnter" android:fontFamily="arial" android:textAllCaps="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1" android:gravity="center" android:padding="1dp" android:text="ENTER" android:background="@color/keyboard" tools:ignore="TouchTargetSizeCheck"/>
+-->
+        <ImageButton
+            android:id="@+id/keyboardEnter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:src="@drawable/ic_action_enter"
+            android:background="@color/keyboard"
+            android:contentDescription="@string/ENTER" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button
+            android:id="@+id/keyboardMinore"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/lessthan"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardMaggiore"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/morethan"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardQuestion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/keyboard"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/question"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardSpace"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="1dp"
+            android:gravity="center"
+            android:background="@color/keyboard"
+            android:text="@string/SPACE" />
+
+        <Button
+            android:id="@+id/keyboardPoint"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/point"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardColon"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/colon"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardComma"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/comma"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardSemicolon"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/semicolon"
+            android:background="@color/keyboard"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboardExclamation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/keyboard"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/exclamation"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>
