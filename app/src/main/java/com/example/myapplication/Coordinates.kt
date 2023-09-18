@@ -39,11 +39,6 @@ class Coordinates {
         current.setXY(x, y)
     }
 
-    fun setOldXY(x: Int?, y: Int?)
-    {
-        old.setXY(x, y)
-    }
-
     fun updateOld() {
         old.setXY(current.getX(), current.getY())
     }

@@ -28,11 +28,6 @@ class MainClass : android.app.Activity() {
     lateinit var KeyboardSpecialImageButtons: List<ImageButton> //Tasti che hanno una immagine di background (shift, backspace, enter)
     private var widthViewMousePad: Int = 0
     private var heightViewMousePad: Int = 0
-    var tempo : Int = 0
-
-    fun main() {
-        print(R.string.app_name)
-    }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean
     {
@@ -78,12 +73,12 @@ class MainClass : android.app.Activity() {
 
         for (specialBtn : Button in KeyboardSpecialButtons)
         {
-            specialBtn.setOnClickListener(clickListener);
+            specialBtn.setOnClickListener(clickListener)
         }
 
         for (imageSpecialBtn : ImageButton in KeyboardSpecialImageButtons)
         {
-            imageSpecialBtn.setOnClickListener(clickListener);
+            imageSpecialBtn.setOnClickListener(clickListener)
         }
 
         KeyboardOtherButtons = listOf(
@@ -109,7 +104,7 @@ class MainClass : android.app.Activity() {
 
         for (otherBtn : Button in KeyboardOtherButtons)
         {
-            otherBtn.setOnClickListener(clickListener);
+            otherBtn.setOnClickListener(clickListener)
         }
 
         //mutable perché devono poter essere convertiti in maiuscolo e/o viceversa
@@ -144,7 +139,7 @@ class MainClass : android.app.Activity() {
 
         for (btn : Button in KeyboardButtons)
         {
-            btn.setOnClickListener(clickListener);
+            btn.setOnClickListener(clickListener)
         }
 
         val policy: StrictMode.ThreadPolicy = StrictMode.ThreadPolicy.Builder().permitAll().build() //questa policy è ancora necessaria?
@@ -221,18 +216,17 @@ class MainClass : android.app.Activity() {
             coordinates.setXY(null, null)
             coordinates.updateOld()
         }
-        coordinates.setXY(event.x.toInt(), event.y.toInt())
-        touchGesture()
-        //debug
-        //txtCoordinates.text = "coordinate -> x==${coordinates.getX()}, y==${coordinates.getY()}, action==$action"
-
+        else if (action == 2){
+            coordinates.setXY(event.x.toInt(), event.y.toInt())
+            touchGesture()
+        }
         true
     }
 
 
     private fun writeSocket(command: String)
     {
-        var res = sc.write(command)
+        val res = sc.write(command)
         if (!res.first)
         {
             when (res.second) {
@@ -275,26 +269,23 @@ class MainClass : android.app.Activity() {
 
     //di seguito viene creato un listener riusato da più risorse
     private val clickListener = View.OnClickListener { v ->
-        var tmpString: String = ""
+        var tmpString = ""
         val id: Int = v.getId()
 
         when (id) {
             R.id.buttonLeft -> {
-                //sc.write("MOUSE_SX")
-                //sc.write("MOUSE_SX_200")
                 writeSocket("MCL")
             }
             R.id.buttonRight -> {
-                //sc.write("MOUSE_DX")
                 writeSocket("MCR")
             }
             in KeyboardButtons.map { it.id } -> {
-                var buttonPressed = (KeyboardButtons.filter { it.id == id })[0]
+                val buttonPressed = (KeyboardButtons.filter { it.id == id })[0]
                 tmpString = buttonPressed.text.toString()
                 writeSocket("CHR_" + tmpString)
             }
             in KeyboardOtherButtons.map { it.id } -> {
-                var buttonPressed = (KeyboardOtherButtons.filter { it.id == id })[0]
+                val buttonPressed = (KeyboardOtherButtons.filter { it.id == id })[0]
                 tmpString = buttonPressed.text.toString()
                 writeSocket("CHR_" + tmpString)
             }
@@ -318,7 +309,7 @@ class MainClass : android.app.Activity() {
                         tmpString = "CHR_ENT"
                     }
                     R.id.keyboardShift -> {
-                        var color = (v.background as ColorDrawable).color
+                        val color = (v.background as ColorDrawable).color
 
                         if (color == getResources().getColor(R.color.keyboardShiftNormal))
                         {
@@ -399,7 +390,7 @@ class MainClass : android.app.Activity() {
                     if (parameters.writeInMemory())
                     {
                         showMessage("Parametri memorizzati con successo !")
-                        result = true;
+                        result = true
                     }
                     else
                     {
@@ -412,12 +403,6 @@ class MainClass : android.app.Activity() {
                     }
 
                     showHideCoordinates()
-
-                    //TODO
-                    //getione caduta di connessione soket
-
-                    //TODO piu dopo
-                    //gestione del touch come DIRECT
                 }
             }
         }
