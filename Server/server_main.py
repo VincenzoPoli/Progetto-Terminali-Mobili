@@ -1,16 +1,8 @@
 import pyautogui
-#pyautogui.click(100, 100)
-#pyautogui.moveTo(100, 150)
-#pyautogui.moveRel((-1) * n, 0)
-#pyautogui.moveRel(0, 10)  # move mouse 10 pixels down
-#time.sleep(1)
-#pyautogui.dragTo(100, 150)
-#pyautogui.dragRel(0, 10)  # drag mouse 10 pixels down
 import socket
 import _thread
 import json
 import time
-#import request
 from pynput.keyboard import Key, Controller
 
 def decodificaMsg(keyboard, msg, debugLevel):
